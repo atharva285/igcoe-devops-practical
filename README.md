@@ -39,20 +39,6 @@ Open these URLs:
 - `http://127.0.0.1:5000/results/999`
 - `http://127.0.0.1:5000/health`
 
-## Docker build and local deployment
-
-```bash
-docker build -t student-result-management:1.0 .
-docker run --rm -d --name result-app -p 5000:5000 student-result-management:1.0
-```
-
-Verify `http://127.0.0.1:5000/results/101` and `http://127.0.0.1:5000/health`.
-
-Stop the container:
-
-```bash
-docker stop result-app
-```
 
 ## GitHub Actions setup
 
@@ -68,10 +54,3 @@ docker stop result-app
 
 **Deployment note:** The workflow's Docker job is a deployment-style smoke test on an ephemeral runner; the container is removed when the job finishes. To deploy persistently, run the Docker commands on the target server or add a separately configured deployment job for the college's hosting environment. Do not store passwords or tokens in source code.
 
-## Suggested exam deliverables
-
-- Repository URL
-- Successful PyTest output
-- GitHub Actions run showing tests, SonarQube scan, and Docker build/smoke test
-- SonarQube dashboard or scan evidence
-- Local Docker container and application endpoint working
