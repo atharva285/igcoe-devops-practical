@@ -1,6 +1,5 @@
-# Student Result Management System — DevOps Practical Kit
+# Student Result Management System
 
-This starter project is designed for a two-hour Third Year Engineering DevOps practical.
 
 ## Features
 
